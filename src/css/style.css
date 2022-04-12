@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* DEF - START */
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: springgreen;
+	width: 500px;
+	margin: 15px auto;
+	border-radius: 25px;
+}
+
+h1 {
+	font-weight: 800;
+}
+/* DEF - END */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+main {
+	background-color: #f7f7f7;
+	min-height: 415px;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 25px;
+	padding: 35px;
+
+	display: grid;
+	justify-content: center;
+	gap: 17.5px;
+
+	grid:
+		'video aside' 1fr
+		'desc aside' auto
+		/ 1fr 275px;
+}
+
+main .content {
+	background-color: #c4c4c4;
+}
+
+.video {
+	grid-area: video;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desc {
+	grid-area: desc;
+}
+
+.desc h2 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 7.5px;
+}
+
+.desc span {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.desc p {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.aside {
+	grid-area: aside;
+}
+
+.aside .ad {
+	width: 275px;
+	height: 50px;
+	margin-bottom: 17.5px;
+}
+
+.aside .ad.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	font-size: 10px;
+}
+
+.aside .related .suggest {
+	display: flex;
+	margin-bottom: 17.5px;
+}
+
+.aside .related .suggest .thumb {
+	width: 100px;
+	height: 75px;
+}
+
+.aside .related .suggest .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 5px;
+}
+
+.aside .related .suggest .info h2 {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.aside .related .suggest .info span {
+	font-size: 10px;
+	font-weight: 300;
+}
